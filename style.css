@@ -1,0 +1,183 @@
+/*
+color:  pozadí stránky #FAFAFA
+        písmo #8B8B8B
+        nadpisy #000000
+        tlačítko šedé #8B8B8B
+        tlačítko modré #407BFF
+        certičky pozadí #FFFFFF
+        stín #407BFF1F
+*/
+
+html {box-sizing: border-box;}
+*, *::before, *::after {box-sizing: inherit;}
+
+body {
+    padding: 60px 20px;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: #8B8B8B;
+    font-size: 16px;
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+h1, h2 {
+    font-weight: medium;
+    color: black;
+}
+
+h1{
+    font-size: 28px;
+}
+@media screen and (min-width: 1100px) {
+    h1{
+        text-align: left;
+    }
+}
+
+h2 {
+    font-size: 16px;
+    margin-top: 60px;
+}
+
+.uvodni {
+    width: 350px;
+    height: 290px;
+}
+@media screen and (min-width: 640px) {
+    header img{
+        width: 400px;
+        height: 330px;
+    }
+}
+@media screen and (min-width: 1100px) {
+     header img{
+        max-width: 425px;
+    }
+}
+
+.odkazy{
+    margin: 30px 30px;
+}
+
+.tlacitko {
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    padding: 11px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 560px) {
+    .odkazy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tlacitko{
+        flex: 0 0 auto;
+        margin: 10px;
+    }
+}
+
+.primarni{
+    background-color: #407BFF;
+}
+
+.sekundarni{
+    background-color: #8B8B8B;
+}
+
+.kontejner{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.ramecek{
+    display: flex;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    margin-bottom: 15px;
+    padding: 20px;
+    width: 100%;
+}
+
+.popisikony{
+    font-size: 13px;
+    flex: 0 0 auto;
+}
+
+.ikona{
+    height: 40px;
+    flex: 0 0 50px;
+    margin-right: 28px;
+}
+
+@media screen and (min-width: 640px) {
+    .kontejner{
+        flex-wrap: nowrap;
+    }  
+    .ramecek{
+        flex-direction: column;
+        justify-items: center;
+        width: calc(100% / 3);
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+    .popisikony{
+        flex: 0 1 auto;
+    }
+    .ikona{
+        flex: 0 1 auto;
+        margin: 20px 0;
+    }  
+    .ikona img{
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .box{
+        display: flex;
+        flex-direction: column;
+        margin: 80px 0;
+    }
+
+    .hlava{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .hlava img{
+        order: 1;
+        flex: 0 0 490px;
+    }
+    .vlevo{
+        flex: 0 0 490px;
+        justify-items: left;
+        text-align: left;
+    }
+    .sluzby-leva{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .text-prava,
+    .text-leva{
+        text-align: left;
+    }
+
+    .sluzby-prava{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+
+
